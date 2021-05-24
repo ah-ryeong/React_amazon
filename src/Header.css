@@ -1,0 +1,71 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky; /*배너는 상단에 노출 및 가만히 있어야함*/
+  top: 0; /*상단에 고정*/
+  z-index: 100; /*겹치는 부분이 있는 경우 누가 위에 있게 할 것인가 지정*/
+  /* -1~1000까지 있음 숫자가 높을수록 위에 낮을 수록 밑에 */
+}
+
+.header_logo {
+  width: 100px;
+  object-fit: contain; /*고정된 컨테이너 부분에 비율을 유지하면서 맞춤*/
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header_search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header_search_input {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header_searchIcon {
+  background-color: #cd9042;
+  padding: 5px;
+  height: 15px;
+}
+
+.header_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header_optionLineOne {
+  font-size: 10px;
+}
+
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 3;
+}
+
+.header_optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header_optionLineTwoheader_basketCount {
+    margin-right: 10px;
+    margin-left: 10px;
+}
