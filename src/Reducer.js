@@ -3,6 +3,12 @@ export const initialState = {
     basket: [],
 }
 
+// selector 가져올거임 : state에서 필요한 데이터를 가져오거나 계산을 수행해서 원하는 형태의 데이터를 가져오는 역할
+// reduce메서드 : 배열의 모든 요소에 대해서 지정된 콜백 함수를 요청, 반환값은 누적된 결과임
+// 모든 배열의 값을 합산할 때 사용함
+export const getBasketTotal = (basket) => 
+    basket?.reduce((amount, item) => item.price + amount, 0)
+
 // Reducer란?
 // 장바구니 담기 같은 행동을 디스패치해주는것 
 // 디스패치란 총을 쏜다고 생각하면 됨 -> 컴포넌트가 가진 정보를 데이터레이어가 둘러싸고 있으면,

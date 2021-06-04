@@ -11,4 +11,4 @@ export const StateProvider = ({ reducer, initialState, children}) => (
 )
 
 // 각 컴포넌트한테 전달
-export const useStateValue = () => useContext(StateContext);
+export const UseStateValue = () => useContext(StateContext);
